@@ -1,4 +1,4 @@
-class RibonucleicAcid
+class NucleicAcid
   def initialize(strand)
     @strand = strand
   end
@@ -14,4 +14,11 @@ class RibonucleicAcid
   def to_str
     @strand
   end
+end
+
+class RibonucleicAcid < NucleicAcid
+end
+
+
+class DeoxyribonucleicAcid < NucleicAcid
 end

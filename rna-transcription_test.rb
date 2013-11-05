@@ -25,7 +25,6 @@ end
 
 class DeoxyribonucleicAcidTest < RibonucleicAcidTest
   def setup
-    skip
     @cga = DeoxyribonucleicAcid.new('CGA')
     @agc = DeoxyribonucleicAcid.new('AGC')
   end
