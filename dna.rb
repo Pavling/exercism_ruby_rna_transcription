@@ -21,4 +21,7 @@ end
 
 
 class DeoxyribonucleicAcid < NucleicAcid
+  def to_rna
+    RibonucleicAcid.new(@strand.tr 'T', 'U')
+  end
 end

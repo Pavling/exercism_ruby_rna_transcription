@@ -37,32 +37,26 @@ class DeoxyribonucleicAcidTest < RibonucleicAcidTest
   end
 
   def test_rna_conversion_returns_ribonucleic_acid_instance
-    skip
     assert_instance_of RibonucleicAcid, DeoxyribonucleicAcid.new('C').to_rna
   end
 
   def test_transcribes_cytidine_unchanged
-    skip
     assert_equal 'C', DeoxyribonucleicAcid.new('C').to_rna
   end
 
   def test_transcribes_guanosine_unchanged
-    skip
     assert_equal 'G', DeoxyribonucleicAcid.new('G').to_rna
   end
 
   def test_transcribes_adenosine_unchanged
-    skip
     assert_equal 'A', DeoxyribonucleicAcid.new('A').to_rna
   end
 
   def test_it_transcribes_thymidine_to_uracil
-    skip
     assert_equal 'U', DeoxyribonucleicAcid.new('T').to_rna
   end
 
   def test_it_transcribes_all_occurrences_of_thymidine_to_uracil
-    skip
     assert_equal 'ACGUGGUCUUAA', DeoxyribonucleicAcid.new('ACGTGGTCTTAA').to_rna
   end
 end
