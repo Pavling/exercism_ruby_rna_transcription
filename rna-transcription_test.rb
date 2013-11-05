@@ -13,13 +13,11 @@ class RibonucleicAcidTest < MiniTest::Unit::TestCase
   end
 
   def test_acid_equals_string
-    skip
     assert_equal @agc, 'AGC'
     refute_equal @agc, 'CGA'
   end
 
   def test_string_equals_acid
-    skip
     assert_equal 'AGC', @agc
     refute_equal 'CGA', @agc
   end
